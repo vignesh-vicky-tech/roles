@@ -1,5 +1,6 @@
 #Inventory File
 [grafanaMaster]
+#system ip given in /etc/hosts
 sm3.dev.com
 
 
