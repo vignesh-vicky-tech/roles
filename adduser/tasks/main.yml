@@ -1,1 +1,11 @@
-
+---
+- name: Create a new user
+  become: yes
+  become_user: root
+  user:
+      name: "{{ user_name }}"
+      password: "{{ user_password }}"
+      group: root
+      state: present
+      shell: /bin/bash
+      createhome: yes
