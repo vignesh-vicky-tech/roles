@@ -1,4 +1,0 @@
----
-- name: restart grafana
-  shell: "sudo kill -9 `sudo lsof -i -P -n | grep 3000` && nohup grafana-server -homepath $GRAFANA_HOME web </dev/null >/dev/null 2>&1 &"
-
