@@ -2,3 +2,8 @@
 #vars for grafana
 grafana_admin_password: "mypassword"
 grafana_admin_user: "admin"
+
+#vars for adduser
+---
+user_name: user1
+user_password: user1@123
