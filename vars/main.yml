@@ -2,6 +2,7 @@
 #vars for grafana
 grafana_admin_password: "mypassword"
 grafana_admin_user: "admin"
+grafana_url: "http://sm3.dev.com:3000"
 
 #vars for adduser
 ---
