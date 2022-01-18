@@ -4,4 +4,7 @@
   become_user: smicro
   roles:
   - useradd
+  - python
+  - grafana
+  - jdk
 
