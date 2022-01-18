@@ -1,1 +1,17 @@
+---
+- name: Install JDK-8
+  become: yes
+  become_user: root
+  yum:
+    name: "{{ jdk_version }}"
+    state: present
+
+- name: export JDk home
+  lineinfile: dest=~/.bashrc line='export JAVA_HOME='{{ jdk_path }}'' insertafter='EOF' state=present
+
+- name: export path
+  lineinfile: dest=~/.bashrc line='export PATH=$PATH:$JAVA_HOME/bin:$PATH' insertafter='EOF' state=present
+
+- name: source JDK home
+  shell: "source ~/.bashrc"
 
