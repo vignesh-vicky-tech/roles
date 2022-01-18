@@ -20,7 +20,7 @@
 
 - name: wait for service up
   uri:
-    url: "http://sm3.dev.com:3000"
+    url: "{{ grafana_url }}"
     status_code: 200
   register: __result
   until: __result.status == 200
